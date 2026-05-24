@@ -1,0 +1,133 @@
+.agent-composer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 4px;
+}
+
+.agent-file-input {
+  display: none;
+}
+
+.agent-upload-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.agent-upload-button,
+.agent-submit-button,
+.agent-selected-image button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.agent-upload-button {
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #24312a;
+  font-weight: 800;
+}
+
+.agent-upload-hint {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.agent-selected-image {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid rgba(36, 49, 42, 0.09);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.agent-selected-image strong,
+.agent-selected-image small {
+  display: block;
+}
+
+.agent-selected-image small {
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.agent-selected-image button {
+  width: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 10px;
+  color: var(--ink);
+  background: rgba(36, 49, 42, 0.06);
+}
+
+.agent-input-label {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.agent-textarea {
+  width: 100%;
+  min-height: 104px;
+  resize: vertical;
+  padding: 12px 14px;
+  border: 1px solid rgba(36, 49, 42, 0.12);
+  border-radius: 16px;
+  color: var(--ink);
+  background: #ffffff;
+  font: inherit;
+  line-height: 1.6;
+}
+
+.agent-error-text {
+  margin: 0;
+  color: var(--rose);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.agent-composer-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.agent-composer-footer span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.agent-submit-button {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--rose), var(--coral));
+  font-weight: 800;
+}
+
+.agent-submit-button:disabled,
+.agent-upload-button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+@media (max-width: 680px) {
+  .agent-upload-bar,
+  .agent-composer-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
