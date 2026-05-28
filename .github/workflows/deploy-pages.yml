@@ -33,6 +33,10 @@ jobs:
         working-directory: health_sys
         run: npm ci
 
+      - name: Run tests
+        working-directory: health_sys
+        run: npm test
+     
       - name: Build
         working-directory: health_sys
         run: npm run build
